@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  width: 60%;
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  box-shadow: 0 0 10px #fff;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background: #ff9800;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+/* Weather Card */
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  animation: popUp 0.8s ease;
+}
+
+.weather-card h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.weather-card p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+/* Error Message */
+.error {
+  color: #ffeb3b;
+  font-weight: bold;
+  margin-top: 15px;
+  animation: shake 0.5s;
+}
+
+/* Loader */
+.loader {
+  margin: 20px auto;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Animations */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar input, .search-bar button {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .weather-card p {
+    font-size: 1rem;
+  }
+}
