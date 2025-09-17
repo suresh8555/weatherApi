@@ -19,5 +19,5 @@ A simple, responsive, and animated React application that lets users check the c
 - Open-Meteo API
 
 ## Deployment
-Live Link : (https://weather-api-five-lake.vercel.app/)
+Live Link : https://weather-api-five-lake.vercel.app/
 Github code : https://github.com/suresh8555/weatherApi.git
