@@ -1,17 +1,23 @@
-# Weather Now 🌤
-
-A simple React app to check current weather by city using the Open-Meteo API.
+# Weather Now
+A simple, responsive, and animated React application that lets users check the current weather conditions of any city in the world. Built using the Open-Meteo API and Open-Meteo Geocoding API.
 
 ## Features
-- Search any city worldwide
-- Shows temperature, wind speed, and conditions
-- Responsive design
-- Error handling for invalid cities
+
+- Search weather by city name
+
+- Displays temperature, wind speed, and conditions
+
+- Smooth animations (loader, fade-in, shake error, popup card)
+
+- Fully responsive design (works on desktop & mobile)
+
+- Error handling (invalid city, network errors)
 
 ## Tech Stack
-- React
-- CSS
+- React.js
+- CSS3
 - Open-Meteo API
 
 ## Deployment
-[Live Demo Link](your-vercel-or-codesandbox-link)
+Live Link : (https://weather-api-five-lake.vercel.app/)
+Github code : https://github.com/suresh8555/weatherApi.git
