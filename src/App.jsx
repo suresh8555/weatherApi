@@ -33,6 +33,7 @@ function App() {
         `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`
       );
       const weatherData = await weatherRes.json();
+      console.log("ok")
 
       setWeather({
         city: `${name}, ${country}`,
